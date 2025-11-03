@@ -44,7 +44,7 @@ I run these VMs in VirtualBox with:
 This part was tricky because I originally had a rule like:
 
 22/tcp DENY IN Anywhere
-22/tcp ALLOW IN 192.168.1.167
+22/tcp ALLOW IN **host ip address**
 
 In this above text, we can see that the first rule was a **DENY IN** which preceded first before the **ALLOW IN** rule. This unfortunately caused my SSH to time out everytime I would try to establish a connection. I fixed this by deleting this rule and readded the       **ALLOW** rule so that way it would be evaluated first.
  
@@ -58,7 +58,7 @@ PasswordAuthentication no
 AllowUsers **your username**
 
 2. UFW rules (host-only in this case)
-sudo ufw allow from 192.168.1.167 to any port 22 proto tcp
+sudo ufw allow from **host ip address** to any port 22 proto tcp
 sudo ufw deny 22/tcp
 sudo ufw status numbered
 
