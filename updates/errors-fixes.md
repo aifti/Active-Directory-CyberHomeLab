@@ -96,7 +96,6 @@ Active forwards:
     **Your Ubuntu VM IP address:9997**
 Now your forwarder has officially become active
 
-
 # Now to verify that our logs are being forwarded to Splunk
 
 After running all of these steps, make sure to be logged into your Splunk Server via your Ubuntu VM
