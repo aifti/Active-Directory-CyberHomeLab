@@ -73,7 +73,7 @@ net stop splunkforwarder
 net start splunkforwarder
 (or you can manually restart the splunkforwarder via services.msc in windows search bar, make sure to run it as administrator)
 
-**✅ Result: Forwarder could now authenticate with a real Splunk user**
+**Result: Forwarder could now authenticate with a real Splunk user**
 
 
 # Problem 3. Splunk Forwarder shows "Configured but inactive forwards"
