@@ -1,0 +1,20 @@
+
+**UFW rules used on Ubuntu Splunk server in this homelab**
+
+# Allow SSH only from host
+sudo ufw allow from **your host ip** to any port 22 proto tcp
+
+# Deny all other SSH
+sudo ufw deny 22/tcp
+
+# Allow Splunk Web UI
+sudo ufw allow from 192.168.1.0/24 to any port 8000 proto tcp
+
+# Allow Splunk receiving port (forwarders)
+sudo ufw allow from 192.168.1.0/24 to any port 9997 proto tcp
+
+# Show rules
+sudo ufw status numbered
+
+These are the necessary and appropriate firewall rules to allow ideal restriction for this lab and to be able to have just enough access to the tools we need accessing to without compromising/exposing ourselves too much
+
