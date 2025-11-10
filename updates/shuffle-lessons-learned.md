@@ -4,7 +4,7 @@ Lessons Learned: Splunk–Shuffle–Active Directory Automation Attempt
 
 ---
 
-## 🔹 Project Overview
+# Project Overview
 This phase of the **Active Directory Cyber Homelab** explored end-to-end automation using:
 - **Splunk** for detection of suspicious RDP logins (Event ID 4624, Logon Type 7 or 10)
 - **Shuffle (SOAR)** for workflow automation
@@ -16,7 +16,7 @@ When Splunk detects a suspicious RDP login from an unknown or external IP, Shuff
 
 ---
 
-## 🧩 Environment Summary
+# Environment Summary
 
 | Component | Purpose |
 |------------|----------|
