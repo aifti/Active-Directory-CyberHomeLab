@@ -13,6 +13,13 @@ sudo ufw allow from 192.168.1.0/24 to any port 8000 proto tcp
 # Allow Splunk receiving port (forwarders)
 sudo ufw allow from 192.168.1.0/24 to any port 9997 proto tcp
 
+3. Key-based auth:
+ssh-keygen -t ed25519 (algorithim) -C **name of key** key
+ssh-copy-id **username@serverip**
+
+4. Restart SSH:
+sudo systemctl restart ssh
+
 # Show rules
 sudo ufw status numbered
 
