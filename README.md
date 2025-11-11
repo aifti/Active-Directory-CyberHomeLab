@@ -11,6 +11,14 @@ The Goal: simulate what an entry-level SOC analyst or blue teamer would do:
 
 On **2025-10-28** I migrated this from cloud VMs to **on-prem VirtualBox VMs** so I could fully control SSH, firewall rules, and network modes. 
 
+Keep in mind, to do this on-prem, ideally you need some beefed-up specs to host this which is what I chose, my specs below:
+
+CPU: Intel I5-8400
+GPU: RTX 3060 (12GB) (shouldn't really matter what your GPU is really)
+RAM: 32 GB (Corsair Vengeance DDR4)
+STORAGE: 2 TB SSD SAMSUNG 870 EVO
+
+What really matters is your RAM amount, ideally 32 GB is highly recommended to host this on-prem project, and of course having extra space is always nice
 ---
 
 Lab Components
@@ -55,14 +63,6 @@ This part was tricky because I originally had a rule like:
 
 In this above text, we can see that the first rule was a **DENY IN** which preceded first before the **ALLOW IN** rule. This unfortunately caused my SSH to time out everytime I would try to establish a connection. I fixed this by deleting this rule and readded the       **ALLOW** rule so that way it would be evaluated first.
  
----
-
-# SSH Hardening
-
-1. /etc/ssh/sshd_config:
-PermitRootLogin no
-PasswordAuthentication no
-AllowUsers **your username**
 
 
 
