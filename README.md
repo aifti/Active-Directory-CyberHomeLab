@@ -29,7 +29,14 @@ High-level flow:
 4. Splunk → SOAR (Shuffle) → ask analyst
 5. If confirmed → disable AD account on DC 
 
-Below I get into the basics of some of the alerts you must pay attention to, however, for more details, please follow the setup's directory which will help with any problems and troubleshooting that may happen.
+Below I get into the basics of some of the alerts you must pay attention to, however, for more details, please follow the setup-guides directory which will help with any problems and troubleshooting that may happen.
+
+Please go in order as mentioned below
+1. environment-setup
+2. windows-setup (goes in hand with the networkconfiguration.md which also touched environment-setup)
+3. splunk-server-setup.md, please also read the troubleshooting methods which is in the updates directory (error-fixes.md)
+4. splunk-shuffle-automation, goes into detail of setting up spl queries, setting up alerts and setting up shuffle/slack automation
+5. shuffle-lessons-learned.md, this is our error and troubleshooting steps we went into, although the end result of this project is that we were not able to set up automation regarding the soc analyst being able to disable the user if the option "yes" was chosen
 
 # PLEASE READ!!!!!!! ----> Networking Notes (Important)
 
@@ -57,17 +64,6 @@ PermitRootLogin no
 PasswordAuthentication no
 AllowUsers **your username**
 
-2. UFW rules (host-only in this case)
-sudo ufw allow from **host ip address** to any port 22 proto tcp
-sudo ufw deny 22/tcp
-sudo ufw status numbered
-
-3. Key-based auth:
-ssh-keygen -t ed25519 (algorithim) -C **name of key** key
-ssh-copy-id **username@serverip**
-
-4. Restart SSH:
-sudo systemctl restart ssh
 
 
 
