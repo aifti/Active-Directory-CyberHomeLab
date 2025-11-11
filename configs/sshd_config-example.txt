@@ -1,1 +1,6 @@
-/etc/ssh/sshd_config: PermitRootLogin no PasswordAuthentication no AllowUsers your username
+# SSH Hardening
+
+1. /etc/ssh/sshd_config:
+PermitRootLogin no
+PasswordAuthentication no
+AllowUsers **your username**
