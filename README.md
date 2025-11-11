@@ -29,7 +29,7 @@ High-level flow:
 4. Splunk → SOAR (Shuffle) → ask analyst
 5. If confirmed → disable AD account on DC 
 
----
+Below I get into the basics of some of the alerts you must pay attention to, however, for more details, please follow the setup's directory which will help with any problems and troubleshooting that may happen.
 
 # PLEASE READ!!!!!!! ----> Networking Notes (Important)
 
