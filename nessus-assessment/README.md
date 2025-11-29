@@ -111,10 +111,10 @@ Script:
 A follow-up Nessus scan was performed to validate remediation.
 
 ### **Results:**
-- ✔ **High severity reduced: 1 → 0**  
-- ✔ Medium findings reduced  
-- ✔ System hardening confirmed  
-- ✔ Nessus validated all registry-based fixes  
+- **High severity reduced: 1 → 0**  
+-  Medium findings reduced  
+-  System hardening confirmed  
+-  Nessus validated all registry-based fixes  
 
 Screenshots located in:  
 `/assets/nessus-after/`
