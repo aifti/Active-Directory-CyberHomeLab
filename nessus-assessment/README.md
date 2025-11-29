@@ -94,19 +94,6 @@ Files placed in:
 3. Enable:  
    **Allow connections only from computers running Remote Desktop with Network Level Authentication**
 
-### **PowerShell Version**
-```powershell
-Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp" -Name "UserAuthentication" -Value 1
-```
-
-Screenshots located in:  
-`/assets/cis/`
-
-Script:  
-`/scripts/enable-nla.ps1`
-
----
-
 ## **8. Post-Remediation Scan**
 A follow-up Nessus scan was performed to validate remediation.
 
@@ -115,11 +102,6 @@ A follow-up Nessus scan was performed to validate remediation.
 -  Medium findings reduced  
 -  System hardening confirmed  
 -  Nessus validated all registry-based fixes  
-
-Screenshots located in:  
-`/assets/nessus-after/`
-
----
 
 ## **9. Before vs After Comparison**
 
